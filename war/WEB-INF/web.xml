@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<servlet>
+		<servlet-name>HelloiPad</servlet-name>
+		<servlet-class>com.hp.btoaw.demo.HelloiPadServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AjaxResponse</servlet-name>
+		<servlet-class>com.hp.btoaw.demo.AjaxResponseServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>KPIResponse</servlet-name>
+		<servlet-class>com.hp.btoaw.demo.GaugeDemoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HelloiPad</servlet-name>
+		<url-pattern>/helloipad</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AjaxResponse</servlet-name>
+		<url-pattern>/ajax</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>KPIResponse</servlet-name>
+		<url-pattern>/kpi</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
